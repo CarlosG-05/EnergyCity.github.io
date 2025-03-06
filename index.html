@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Energy Game</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        
+        body, html {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            background: url('https://static.vecteezy.com/system/resources/previews/001/503/775/non_2x/city-with-nature-park-landscape-scene-free-vector.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #1b5e20;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: centgit er;
+            animation: fadeIn 2s ease-in;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            animation: slideDown 1.5s ease-out;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #2e7d32;
+            animation: popIn 1.5s ease-in-out;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+            border: 3px solid #2e7d32;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        p {
+            font-size: 1.2em;
+            color: #388e3c;
+            border: 2px solid #388e3c;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            text-align: center;
+        }
+        .start-button {
+            background-color: #4caf50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.4em;
+            font-weight: bold;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            animation: bounce 2s infinite;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 300px;
+        }
+        .start-button:hover {
+            background-color: #388e3c;
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes popIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Energy City</h1>
+        <p>Build a sustainable future by managing renewable energy sources!</p>
+        <button class="start-button" onclick="startGame()">Start Game</button>
+    </div>
+    <script>
+        function startGame() {
+            alert('Game starting soon! Implement game logic here.');
+        }
+    </script>
+</body>
+</html>
